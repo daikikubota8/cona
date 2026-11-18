@@ -880,6 +880,87 @@
     .dc-prof { padding: 18px 16px; }
     .dc-prof-kv th { width: 30%; }
   }
+  /* ===== 出店稟議タブ ===== */
+  .jr-hero { background: linear-gradient(150deg, #1C1C1E 0%, #3A1219 60%, #7A1620 100%) !important; color: #fff; border: none !important; position: relative; overflow: hidden; }
+  .jr-hero::before { content: ''; position: absolute; right: -90px; top: -90px; width: 280px; height: 280px; border-radius: 50%; background: radial-gradient(circle, rgba(255,120,90,.45), transparent 65%); pointer-events: none; }
+  .jr-hero > * { position: relative; }
+  .jr-hero-tag { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: .14em; color: #FFD83B; border: 1px solid rgba(255,216,59,.5); border-radius: 999px; padding: 3px 12px; margin-bottom: 12px; }
+  .jr-hero h2 { font-size: 24px; line-height: 1.5; font-weight: 900; margin-bottom: 10px; }
+  .jr-hero p { color: rgba(255,255,255,.88); font-size: 14px !important; line-height: 1.9 !important; }
+  .jr-hero p b { color: #FFD83B; }
+  .jr-flow { display: flex; align-items: stretch; gap: 8px; margin-top: 18px; }
+  .jr-flow > div { flex: 1; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.16); border-radius: 14px; padding: 12px 10px; text-align: center; backdrop-filter: blur(4px); }
+  .jr-flow span { display: inline-flex; width: 24px; height: 24px; border-radius: 50%; background: #FFD83B; color: #1B1B1B; font-weight: 900; font-size: 13px; align-items: center; justify-content: center; margin-bottom: 6px; }
+  .jr-flow b { display: block; font-size: 14px; }
+  .jr-flow small { display: block; font-size: 11px; color: rgba(255,255,255,.72); margin-top: 2px; line-height: 1.5; }
+  .jr-flow i { align-self: center; width: 0; height: 0; border-left: 8px solid rgba(255,255,255,.45); border-top: 6px solid transparent; border-bottom: 6px solid transparent; flex: none; }
+  .jr-br { display: none; }
+  .jr-blocks { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .jr-blocks > div { display: grid; grid-template-columns: 34px 1fr; column-gap: 10px; background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 12px; }
+  .jr-blocks em { grid-row: span 2; font-style: normal; font-size: 22px; font-weight: 900; color: var(--red); line-height: 1.2; }
+  .jr-blocks b { font-size: 14px; }
+  .jr-blocks span { font-size: 12px; color: var(--text-secondary); line-height: 1.6; }
+  .jr-note { font-size: 12px !important; color: var(--text-muted); line-height: 1.8 !important; margin-top: 10px; }
+  .jr-bar { display: flex; height: 44px; border-radius: 12px; overflow: hidden; box-shadow: inset 0 0 0 1px rgba(0,0,0,.06); background: #eee; }
+  .jr-bar span { display: flex; align-items: center; justify-content: center; color: #fff; font-size: 12px; font-weight: 800; white-space: nowrap; overflow: hidden; }
+  .jr-bar span.rest { background: repeating-linear-gradient(45deg, #E6E2DC, #E6E2DC 8px, #F1EEE9 8px, #F1EEE9 16px); color: #6B6760; font-size: 11px; }
+  .jr-legend { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 12px; font-size: 12.5px; color: var(--text-secondary); }
+  .jr-legend span { display: inline-flex; align-items: center; gap: 6px; line-height: 1.5; }
+  .jr-legend i { flex: none; width: 12px; height: 12px; border-radius: 3px; }
+  .jr-legend i.rest { background: repeating-linear-gradient(45deg, #CFCBC5, #CFCBC5 3px, #F1EEE9 3px, #F1EEE9 6px); }
+  .jr-sechead { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin: 26px 2px 12px; }
+  .jr-sechead span { font-size: 11px; font-weight: 800; letter-spacing: .16em; color: var(--red); }
+  .jr-sechead h3 { font-size: 18px; font-weight: 900; }
+  .jr-tools { margin-left: auto; display: flex; gap: 6px; }
+  .jr-tools button { border: 1.5px solid var(--border); background: #fff; border-radius: 999px; padding: 6px 12px; font-size: 12px; font-weight: 700; color: var(--text-secondary); cursor: pointer; font-family: inherit; }
+  .jr-tools button:hover { border-color: #E8403A; color: var(--red); }
+  .jr-std { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .jr-group { background: linear-gradient(180deg, #fff, #FFFBFA); border: 1px solid rgba(212,43,43,.12); border-radius: 16px; box-shadow: var(--card-shadow); overflow: hidden; }
+  .jr-gt { background: linear-gradient(135deg, #1B1B1B, #4A1017); color: #fff; font-size: 13px; font-weight: 800; padding: 10px 16px; letter-spacing: .04em; }
+  .jr-row { display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; padding: 11px 16px; border-bottom: 1px solid #F0ECE8; align-items: baseline; }
+  .jr-row:last-child { border-bottom: none; }
+  .jr-row b { font-size: 13.5px; }
+  .jr-row .v { font-size: 14.5px; font-weight: 900; color: var(--red); text-align: right; }
+  .jr-row small { grid-column: 1 / -1; font-size: 11.5px; color: var(--text-muted); line-height: 1.6; }
+  .jr-row small:empty { display: none; }
+  .jr-acc { display: flex; flex-direction: column; gap: 10px; }
+  .jr-d { background: linear-gradient(180deg, #fff, #FFFBFA); border: 1px solid rgba(212,43,43,.12); border-radius: 16px; box-shadow: var(--card-shadow); overflow: hidden; }
+  .jr-d[open] { border-color: rgba(212,43,43,.38); }
+  .jr-d summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 12px; padding: 14px 16px; -webkit-tap-highlight-color: transparent; }
+  .jr-d summary::-webkit-details-marker { display: none; }
+  .jr-d summary em { flex: none; width: 32px; height: 32px; border-radius: 10px; background: var(--grad-red); color: #fff; font-style: normal; font-weight: 900; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 16px -8px var(--glow); }
+  .jr-d summary span { flex: 1; font-size: 15px; font-weight: 800; }
+  .jr-d summary i { flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--bg); position: relative; transition: transform .3s, background .3s; }
+  .jr-d summary i::before { content: ''; position: absolute; left: 8px; top: 8px; width: 7px; height: 7px; border-right: 2.5px solid #8A8780; border-bottom: 2.5px solid #8A8780; transform: rotate(45deg) translate(-1px,-1px); }
+  .jr-d[open] summary i { transform: rotate(180deg); background: #FDECEA; }
+  .jr-dbody { padding: 0 16px 16px; animation: ui-fade .35s ease both; }
+  .jr-dbody p { font-size: 13.5px !important; line-height: 1.9 !important; color: #2A2724; margin-top: 10px; }
+  .jr-formula { background: #FAF8F6; border-left: 4px solid var(--red); border-radius: 8px; padding: 10px 14px; margin-top: 8px; font-size: 14px; font-weight: 800; line-height: 1.7; }
+  .jr-formula small { font-weight: 600; color: var(--text-muted); }
+  .jr-sub { font-size: 12px; color: var(--text-secondary); padding: 6px 14px 0 18px; }
+  .jr-steps { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-top: 4px; }
+  .jr-steps > div { background: #FAF8F6; border-radius: 10px; padding: 10px 12px; }
+  .jr-steps b { display: block; font-size: 13px; color: var(--red); margin-bottom: 2px; }
+  .jr-steps span { font-size: 13px; font-weight: 700; line-height: 1.6; }
+  .jr-two { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-top: 10px; }
+  .jr-two > div { background: #FAF8F6; border-radius: 10px; padding: 10px 12px; }
+  .jr-two b { display: block; font-size: 13px; margin-bottom: 4px; }
+  .jr-two span { font-size: 12.5px; color: var(--text-secondary); line-height: 1.7; }
+  .jr-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+  .jr-chips span { background: #fff; border: 1px solid rgba(212,43,43,.2); border-radius: 999px; padding: 5px 12px; font-size: 12.5px; font-weight: 700; color: #4A4540; box-shadow: 0 2px 8px -4px rgba(150,30,30,.25); }
+  .jr-chips.big span { font-size: 13.5px; padding: 8px 16px; }
+  .jr-vary { margin-top: 18px; }
+  .jr-src { font-size: 11px; color: var(--text-muted); text-align: right; margin-top: 4px; }
+  @media (max-width: 640px) {
+    .jr-hero h2 { font-size: 20px; } .jr-br { display: inline; }
+    .jr-flow { flex-direction: column; gap: 6px; }
+    .jr-flow > div { display: grid; grid-template-columns: 26px 1fr; column-gap: 10px; text-align: left; align-items: center; padding: 10px 12px; }
+    .jr-flow span { grid-row: span 2; margin: 0; } .jr-flow i { display: none; }
+    .jr-blocks, .jr-std, .jr-steps, .jr-two { grid-template-columns: 1fr; }
+    .jr-bar span { font-size: 11px; }
+    .jr-sechead h3 { font-size: 16px; } .jr-tools { margin-left: 0; width: 100%; }
+    .jr-row { padding: 10px 14px; } .jr-row .v { font-size: 14px; }
+  }
 </style>
 </head>
 <body>
@@ -896,6 +977,7 @@
   <button class="tab-btn" onclick="switchTab('license', this)">📑 ライセンス条件</button>
   <button class="tab-btn" onclick="switchTab('doc', this)">📘 業態資料</button>
   <button class="tab-btn" onclick="switchTab('qa', this)">❓ Q&amp;A</button>
+  <button class="tab-btn" onclick="switchTab('jr', this)">📝 出店稟議</button>
   <button class="tab-btn" onclick="switchTab('stores', this)">🏪 店舗一覧</button>
   <button class="tab-btn" onclick="switchTab('flash', this)">🃏 暗記カード</button>
   <button class="tab-btn" onclick="switchTab('profit', this)">📊 利益構造</button>
@@ -1325,6 +1407,189 @@
     <div class="qa-count" id="qa-count"></div>
     <div class="qa-list" id="qa-list"></div>
     <div class="qa-empty" id="qa-empty" style="display:none;">該当する質問がありません。キーワードを変えてお試しください。</div>
+  </div>
+
+  <!-- ==================== 出店稟議タブ ==================== -->
+  <div class="tab-panel" id="tab-jr">
+    <div class="card jr-hero">
+      <div class="jr-hero-tag">出店稟議書の見方</div>
+      <h2>「この出店は成り立つか」を<br class="jr-br">数字で確認する資料</h2>
+      <p>出店稟議書は、<b>物件条件・初期投資・売上と利益の見込み</b>を1枚にまとめた資料です。ここでは、稟議書の計算で使っている<b>基準値と計算の考え方</b>をまとめています（特定の物件の数字は載せていません）。</p>
+      <div class="jr-flow">
+        <div><span>1</span><b>売上を置く</b><small>席数・客単価・稼働率</small></div>
+        <i></i>
+        <div><span>2</span><b>費用を置く</b><small>原価・人件費・家賃ほか</small></div>
+        <i></i>
+        <div><span>3</span><b>利益を出す</b><small>営業利益・損益分岐</small></div>
+        <i></i>
+        <div><span>4</span><b>投資を回収</b><small>回収月数・ROI</small></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">稟議書の構成（8つのブロック）</div>
+      <div class="jr-blocks">
+        <div><em>①</em><b>物件概要</b><span>立地・坪数・階数・引渡条件・契約年数・開店予定日</span></div>
+        <div><em>②</em><b>賃貸契約条件</b><span>家賃・保証金・礼金・仲介手数料・INGS加盟金/保証金</span></div>
+        <div><em>③</em><b>造作設備等</b><span>造作工事・厨房設備・レジ・備品など初期投資</span></div>
+        <div><em>④</em><b>売上想定</b><span>席数 × 稼働率 × 回転率 × 客単価</span></div>
+        <div><em>⑤</em><b>想定店舗PL</b><span>初年度〜3年目の3パターンで利益を試算</span></div>
+        <div><em>⑥</em><b>限界利益</b><span>損益分岐売上（赤字にならない売上ライン）</span></div>
+        <div><em>⑦</em><b>投資回収</b><span>回収月数・ROI</span></div>
+        <div><em>⑧</em><b>勘定科目</b><span>PLの各費用の算出根拠（3年目）</span></div>
+      </div>
+      <p class="jr-note">このほか「出店選定理由」「考慮すべき特殊事情・リスク」「総括」の記入欄があり、数字に表れない判断材料を文章で補います。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">売上100%の内訳イメージ（ルールで決まる費用）</div>
+      <div class="jr-bar" role="img" aria-label="売上100%に対する原価28%、人件費26%、広告宣伝費3%、消耗品費2.1%、カード手数料1.5%、残り39.4%">
+        <span style="width:28%;background:#E8403A">28%</span>
+        <span style="width:26%;background:#F59E0B">26%</span>
+        <span style="width:3%;background:#2563EB"></span>
+        <span style="width:2.1%;background:#7C3AED"></span>
+        <span style="width:1.5%;background:#059669"></span>
+        <span class="rest" style="width:39.4%">固定費・利益ほか</span>
+      </div>
+      <div class="jr-legend">
+        <span><i style="background:#E8403A"></i>原価 28%</span>
+        <span><i style="background:#F59E0B"></i>人件費 26%（法定福利費を除く）</span>
+        <span><i style="background:#2563EB"></i>広告宣伝費 3%</span>
+        <span><i style="background:#7C3AED"></i>消耗品費 2.1%</span>
+        <span><i style="background:#059669"></i>カード手数料 1.5%</span>
+        <span><i class="rest"></i>残り 約39%（家賃・光熱費・その他の固定費・償却・利益。物件ごとに変わります）</span>
+      </div>
+    </div>
+
+    <div class="jr-sechead"><span>STANDARDS</span><h3>稟議書で使っている基準値</h3></div>
+    <div class="jr-std">
+      <div class="jr-group">
+        <div class="jr-gt">売上の置き方</div>
+        <div class="jr-row"><b>客単価</b><span class="v">2,650円（税抜）</span><small>ブランド資料の平均客単価（2,700円）より少し低めの設定</small></div>
+        <div class="jr-row"><b>席稼働率</b><span class="v">80%</span><small>平日・週末とも同じ値</small></div>
+        <div class="jr-row"><b>営業日数</b><span class="v">平日22日＋週末8日</span><small>月30日で計算</small></div>
+        <div class="jr-row"><b>売上の振れ幅</b><span class="v">3パターン</span><small>基準（通常期）に対し、高めのケース 約+10%、低めのケース 約−11%</small></div>
+        <div class="jr-row"><b>席数・席回転率</b><span class="v">物件ごとに入力</span><small>物件の広さ・立地に応じて設定</small></div>
+      </div>
+      <div class="jr-group">
+        <div class="jr-gt">原価・人件費</div>
+        <div class="jr-row"><b>原価率</b><span class="v">28%</span><small>商品仕入高 ÷ 売上</small></div>
+        <div class="jr-row"><b>人件費の目標</b><span class="v">売上の26%</span><small>法定福利費を除いた金額で管理</small></div>
+        <div class="jr-row"><b>社員の給与</b><span class="v">月30万円／人</span><small>固定費。人数は店舗ごとに設定</small></div>
+        <div class="jr-row"><b>法定福利費</b><span class="v">社員給与の15.7%</span><small>社員給与にのみ加算</small></div>
+        <div class="jr-row"><b>アルバイト（雑給）</b><span class="v">残りで調整</span><small>人件費の目標 − 社員給与 ＝ アルバイトに使える予算</small></div>
+      </div>
+      <div class="jr-group">
+        <div class="jr-gt">販管費（売上に連動するもの）</div>
+        <div class="jr-row"><b>広告宣伝費</b><span class="v">売上 × 3%</span><small></small></div>
+        <div class="jr-row"><b>消耗品費</b><span class="v">売上 × 2.1%</span><small></small></div>
+        <div class="jr-row"><b>カード手数料</b><span class="v">売上の1.5%</span><small>売上 × カード利用想定50% × 手数料3%</small></div>
+        <div class="jr-row"><b>支払手数料</b><span class="v">売上×4%×38%＋1万円</span><small>稟議書上の算式</small></div>
+        <div class="jr-row"><b>その他（概算）</b><span class="v">売上の約4%＋1万円</span><small>稟議書上の概算（金額から逆算）</small></div>
+      </div>
+      <div class="jr-group">
+        <div class="jr-gt">販管費（月額で固定して置くもの）</div>
+        <div class="jr-row"><b>家賃等</b><span class="v">契約条件どおり</span><small>家賃＋売上歩合＋管理費・共益費＋その他月額。物件ごとに入力</small></div>
+        <div class="jr-row"><b>水道光熱費</b><span class="v">月40万円</span><small>稟議書の設定値（規模により調整）</small></div>
+        <div class="jr-row"><b>その他の固定費</b><span class="v">予算で計上</span><small>衛生費 月7万円／旅費交通費 月8万円／通信費 月1.5万円／修繕維持費 月3万円／保険料 月0.5万円</small></div>
+        <div class="jr-row"><b>採用教育費</b><span class="v">年15万円 ÷ 12ヶ月</span><small>求人広告 年2回の想定</small></div>
+      </div>
+      <div class="jr-group">
+        <div class="jr-gt">償却・税金</div>
+        <div class="jr-row"><b>造作の償却</b><span class="v">18年</span><small>造作（造作譲渡を含む）の工事費を月割り</small></div>
+        <div class="jr-row"><b>設備・券売機の償却</b><span class="v">5年</span><small>厨房設備・レジ・券売機を月割り</small></div>
+        <div class="jr-row"><b>礼金等の償却</b><span class="v">契約年数で月割り</span><small>（礼金＋償却）÷ 契約年数 ÷ 12ヶ月</small></div>
+        <div class="jr-row"><b>資産除去償却</b><span class="v">月3万円</span><small>概算</small></div>
+        <div class="jr-row"><b>法人税等</b><span class="v">営業利益の34.6%</span><small>営業利益から差し引いて税引後利益を算出</small></div>
+      </div>
+    </div>
+
+    <div class="jr-sechead"><span>HOW IT WORKS</span><h3>計算の流れ</h3>
+      <div class="jr-tools"><button type="button" onclick="jrToggle(true)">すべて開く</button><button type="button" onclick="jrToggle(false)">閉じる</button></div>
+    </div>
+    <div class="jr-acc" id="jr-acc">
+      <details class="jr-d" open>
+        <summary><em>1</em><span>売上の出し方</span><i></i></summary>
+        <div class="jr-dbody">
+          <div class="jr-formula">来客数／日 ＝ 席数 × 席稼働率 × 席回転率</div>
+          <div class="jr-formula">売上／日 ＝ 来客数 × 客単価</div>
+          <div class="jr-formula">月間売上 ＝ 平日の売上／日 × 22日 ＋ 週末の売上／日 × 8日</div>
+          <p>席数と席回転率は物件ごとに設定し、客単価（2,650円）・席稼働率（80%）・営業日数は共通の値を使います。売上は<b>通常期（基準）</b>を中心に、高めのケースと低めのケースの3パターンで置き、どの水準でも利益が出るかを確認します。</p>
+        </div>
+      </details>
+      <details class="jr-d">
+        <summary><em>2</em><span>人件費の組み立て方</span><i></i></summary>
+        <div class="jr-dbody">
+          <div class="jr-steps">
+            <div><b>① 目標を決める</b><span>人件費の目標 ＝ 売上 × 26%（法定福利費を除く）</span></div>
+            <div><b>② 社員を固定で置く</b><span>社員給与 ＝ 月30万円 × 社員数</span></div>
+            <div><b>③ 法定福利費を加える</b><span>法定福利費 ＝ 社員給与 × 15.7%</span></div>
+            <div><b>④ アルバイトで調整</b><span>雑給 ＝ 人件費の目標 − 社員給与</span></div>
+          </div>
+          <p>社員は売上に関係なく固定、アルバイト分で売上に合わせて調整する考え方です。PL上の人件費は「社員給与＋雑給＋法定福利費」なので、<b>目標の26%に法定福利費ぶんが上乗せ</b>された率になります。</p>
+        </div>
+      </details>
+      <details class="jr-d">
+        <summary><em>3</em><span>想定PL（営業利益・税引後利益）</span><i></i></summary>
+        <div class="jr-dbody">
+          <div class="jr-formula">売上総利益 ＝ 売上 − 商品仕入高（原価28%）</div>
+          <div class="jr-formula">営業損益 ＝ 売上総利益 − 販管費</div>
+          <div class="jr-sub">販管費 ＝ 人件費 ＋ 家賃等 ＋ その他販管費 ＋ 減価償却等</div>
+          <div class="jr-formula">税引後利益 ＝ 営業損益 − 法人税等（営業損益 × 34.6%）</div>
+          <p>稟議書では「初年度・2年目・3年目」のPLを並べます。3年目を<b>通常期</b>（基準）とし、初年度は売上高め、2年目は売上低めの設定です。勘定科目の内訳（⑧）は3年目の数字で作られています。</p>
+        </div>
+      </details>
+      <details class="jr-d">
+        <summary><em>4</em><span>限界利益と損益分岐売上</span><i></i></summary>
+        <div class="jr-dbody">
+          <div class="jr-formula">限界利益 ＝ 売上 − 変動費</div>
+          <div class="jr-formula">限界利益率 ＝ 限界利益 ÷ 売上　<small>（約67%）</small></div>
+          <div class="jr-formula">損益分岐売上 ＝ 固定費合計 ÷ 限界利益率</div>
+          <div class="jr-two">
+            <div><b>変動費（売上に連動）</b><span>商品仕入高・消耗品費・支払手数料・カード手数料</span></div>
+            <div><b>固定費（売上に関係なく発生）</b><span>人件費・家賃等・水道光熱費などのその他固定費・減価償却等</span></div>
+          </div>
+          <p>損益分岐売上は「これを下回ると赤字になる売上ライン」です。想定売上との差が大きいほど、売上が落ちても赤字になりにくい店舗です。人件費は固定費として扱っています。</p>
+        </div>
+      </details>
+      <details class="jr-d">
+        <summary><em>5</em><span>投資回収（回収月数・ROI）</span><i></i></summary>
+        <div class="jr-dbody">
+          <div class="jr-formula">回収月数 ＝ 投資額 ÷（月間の利益 ＋ 月間の減価償却費）</div>
+          <p>減価償却費は実際の現金支出を伴わない費用のため、利益に足し戻して回収スピードを見ます。<b>営業利益ベース</b>と<b>税引後ベース</b>の2通りを表示し、ROIは投資額に対する利益の割合を示します。いずれも3パターンの売上で並べ、低めのケースでも回収の見通しが立つかを確認します。</p>
+          <p class="jr-note">投資額は「物件取得＋設備投資等」の合計で見るのが基本です。回収月数の算出に使う投資額の範囲は、管理部門の運用に合わせてご説明ください。</p>
+        </div>
+      </details>
+      <details class="jr-d">
+        <summary><em>6</em><span>初期投資の内訳</span><i></i></summary>
+        <div class="jr-dbody">
+          <div class="jr-two">
+            <div><b>(1) 物件取得</b><span>保証金・礼金・仲介手数料・保証会社加入料・造作譲渡料・INGS加盟金（150万円）・INGS保証金（100万円）</span></div>
+            <div><b>(2) 設備投資等</b><span>店舗造作（C工事・B工事）・厨房設備・レジ／券売機・開店時準備備品・開業前人件費・採用費</span></div>
+          </div>
+          <div class="jr-formula">総投資額 ＝ (1) 物件取得 ＋ (2) 設備投資等</div>
+          <p>INGS加盟金・保証金は、ライセンス条件のとおりです（増店の場合の加盟金は100万円）。造作工事費は、そのまま減価償却費（造作18年、設備5年）として毎月のPLに反映されます。</p>
+        </div>
+      </details>
+      <details class="jr-d">
+        <summary><em>7</em><span>物件概要・賃貸条件で確認する項目</span><i></i></summary>
+        <div class="jr-dbody">
+          <div class="jr-chips">
+            <span>最寄駅・徒歩分数</span><span>0.5km以内の他駅</span><span>階数</span><span>坪数</span><span>坪単価（家賃 ÷ 坪数）</span><span>現テナント</span><span>引渡条件（居抜き／スケルトン）</span><span>契約形態・契約年数</span><span>引渡予定日</span><span>賃料発生予定日</span><span>開店予定日</span><span>造作設備の使用状況</span>
+          </div>
+          <p>引渡日・賃料発生日・開店日の関係で、開店前に発生する家賃の負担も変わります。家賃は売上歩合・管理費・共益費を含めた<b>「家賃等」の合計</b>で見ます。</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="card jr-vary">
+      <div class="card-title">物件ごとに結果が変わる主な項目</div>
+      <div class="jr-chips big">
+        <span>席数</span><span>席回転率</span><span>家賃等</span><span>初期投資額（造作・設備）</span><span>社員数</span><span>契約年数</span><span>引渡条件（居抜き／スケルトン）</span>
+      </div>
+      <p class="jr-note">客単価・席稼働率・原価率・人件費率などの基準値は共通で、上の項目を入れ替えて物件ごとの収支を見ます。</p>
+    </div>
+    <p class="jr-src">出典：出店稟議書（管理部門作成）。数値は稟議書上の設定で、物件・規模によって変わります。</p>
   </div>
 
   <!-- ==================== 店舗一覧タブ ==================== -->
@@ -2816,6 +3081,9 @@ function uiOnTab(name, btn) {
   window.addEventListener('scroll', () => { if (!tick) { tick = true; requestAnimationFrame(upd); } }, { passive: true });
   window.addEventListener('resize', upd);
 })();
+
+// ─── 出店稟議 ───────────────────────────────
+function jrToggle(open) { document.querySelectorAll('#jr-acc details').forEach(d => d.open = open); }
 
 // ─── 初期化 ───────────────────────────────
 try { seedFaqs(); }         catch(e) { console.error('seedFaqs', e); }
